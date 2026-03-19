@@ -1,0 +1,156 @@
+---
+layout: single
+title: "News / Media Coverage"
+permalink: /research-highlights/media/
+author_profile: true
+---
+
+{% assign highlights = site.data.research_highlights_media.highlights %}
+{% assign curated = site.data.research_highlights_media_manual.highlights %}
+
+<style>
+.media-highlight-section {
+  margin-bottom: 2.5rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid #d8e0ea;
+  border-radius: 14px;
+  background: #fbfdff;
+}
+
+.media-highlight-meta {
+  margin: 0.4rem 0 1rem 0;
+  color: #475569;
+}
+
+.media-highlight-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0 0 1rem 0;
+}
+
+.media-highlight-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: #eef6ff;
+  color: #1d4ed8;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.media-summary {
+  margin: 0 0 1.1rem 0;
+  color: #334155;
+}
+
+.media-coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.media-coverage-column {
+  padding: 1rem 1.05rem;
+  border: 1px solid #e5edf5;
+  border-radius: 12px;
+  background: #ffffff;
+}
+
+.media-coverage-subtitle {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.media-mention-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.media-mention-list.scrollable {
+  max-height: 16.2rem;
+  overflow-y: auto;
+  padding-right: 0.4rem;
+}
+
+.media-mention-list li {
+  margin-bottom: 0.65rem;
+}
+
+.media-mention-meta {
+  color: #64748b;
+}
+
+.media-mention-note {
+  color: #64748b;
+}
+
+@media (max-width: 760px) {
+  .media-coverage-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+{% for item in highlights %}
+  {% assign extra_item = curated[item.slug] %}
+  {% assign english_mentions = extra_item.english_mentions | sort: 'priority' %}
+  {% assign chinese_mentions = extra_item.chinese_mentions | sort: 'priority' %}
+  <section class="media-highlight-section" id="{{ item.slug }}">
+    <h2><a href="{{ item.paper_url }}">{{ item.title }}</a></h2>
+    <p class="media-highlight-meta"><i>{{ item.journal }}</i></p>
+    <div class="media-highlight-links">
+      <a class="media-highlight-link" href="{{ item.paper_url }}">Paper</a>
+      <a class="media-highlight-link" href="{{ item.metrics_url }}">Nature metrics page</a>
+    </div>
+
+    {% if extra_item and extra_item.summary %}
+      <p class="media-summary">{{ extra_item.summary }}</p>
+    {% endif %}
+
+    <div class="media-coverage-grid">
+      <div class="media-coverage-column">
+        <h3 class="media-coverage-subtitle">English Coverage</h3>
+        {% assign english_count = english_mentions | size %}
+        <ul class="media-mention-list{% if english_count > 3 %} scrollable{% endif %}">
+          {% for mention in english_mentions %}
+            <li>
+              {% if mention.url %}
+                <a href="{{ mention.url }}">{{ mention.title }}</a>
+              {% else %}
+                {{ mention.title }}
+              {% endif %}
+              <span class="media-mention-meta">({{ mention.source }}{% if mention.date %}, {{ mention.date }}{% endif %})</span>
+              {% if mention.note %}
+                <span class="media-mention-note">{{ mention.note }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="media-coverage-column">
+        <h3 class="media-coverage-subtitle">中文报道</h3>
+        {% assign chinese_count = chinese_mentions | size %}
+        <ul class="media-mention-list{% if chinese_count > 3 %} scrollable{% endif %}">
+          {% for mention in chinese_mentions %}
+            <li>
+              {% if mention.url %}
+                <a href="{{ mention.url }}">{{ mention.title }}</a>
+              {% else %}
+                {{ mention.title }}
+              {% endif %}
+              <span class="media-mention-meta">({{ mention.source }}{% if mention.date %}, {{ mention.date }}{% endif %})</span>
+              {% if mention.note %}
+                <span class="media-mention-note">{{ mention.note }}</span>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </section>
+{% endfor %}

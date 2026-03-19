@@ -1,0 +1,45 @@
+﻿name: Sync ORCID Publications
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 3 * * 1'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      ORCID_CLIENT_ID: ${{ secrets.ORCID_CLIENT_ID }}
+      ORCID_CLIENT_SECRET: ${{ secrets.ORCID_CLIENT_SECRET }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate ORCID credentials
+        if: ${{ env.ORCID_CLIENT_ID == '' || env.ORCID_CLIENT_SECRET == '' }}
+        run: |
+          echo "Missing ORCID_CLIENT_ID or ORCID_CLIENT_SECRET repository secrets."
+          echo "Add them before enabling scheduled ORCID publication sync."
+          exit 1
+
+      - name: Sync ORCID publications
+        run: python scripts/sync_orcid_publications.py --config _config.yml --output-dir _publications --files-dir files
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- _publications files/orcid-bib; then
+            echo "No ORCID publication changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _publications files/orcid-bib
+          git commit -m "Sync ORCID publications"
+          git push

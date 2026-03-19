@@ -1,4 +1,4 @@
----
+﻿---
 layout: default
 ---
 
@@ -36,6 +36,8 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.venue and page.date %}
+          <p><i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}
@@ -44,6 +46,7 @@ layout: default
         </header>
       {% endunless %}
 
+      {% unless page.collection == 'publications' %}
       <section class="page__content" itemprop="text">
         {{ content }}
 
@@ -75,6 +78,7 @@ layout: default
 
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
+      {% endunless %}
 
       <footer class="page__meta">
         {% if site.data.ui-text[site.locale].meta_label %}

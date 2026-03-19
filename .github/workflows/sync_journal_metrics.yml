@@ -1,0 +1,44 @@
+name: Sync Journal Metrics
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * 1'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    env:
+      EASYSCHOLAR_API_KEY: ${{ secrets.EASYSCHOLAR_API_KEY }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate EasyScholar API key
+        if: ${{ env.EASYSCHOLAR_API_KEY == '' }}
+        run: |
+          echo "Missing EASYSCHOLAR_API_KEY repository secret."
+          echo "Add it before enabling scheduled journal-metrics sync."
+          exit 1
+
+      - name: Sync journal metrics
+        run: python scripts/sync_journal_metrics.py --timeout 10
+
+      - name: Commit and push changes
+        run: |
+          if git diff --quiet -- _data/journal_metrics.yml; then
+            echo "No journal metric changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add _data/journal_metrics.yml
+          git commit -m "Sync journal metrics"
+          git push

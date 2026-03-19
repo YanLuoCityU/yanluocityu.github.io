@@ -1,0 +1,167 @@
+highlights:
+  multiomics-cvd:
+    summary: "This study developed an AI-driven multiomics framework that integrates proteomic and metabolomic signals with clinical information to predict multiple cardiovascular diseases up to 15 years before onset, supporting earlier and more personalized prevention."
+    english_mentions:
+      - priority: 1
+        title: "HKUMed develops innovative AI tool: a single blood test can predict heart diseases up to 15 years before onset"
+        source: "The University of Hong Kong Press Releases"
+        url: "http://www.hku.hk/press/news_detail_28986.html"
+      - priority: 2
+        title: "A single blood test can predict heart diseases up to 15 years before onset"
+        source: "MedicalXpress"
+        url: "https://medicalxpress.com/news/2026-03-blood-heart-diseases-years-onset.html?src_id=alt"
+      - priority: 3
+        title: "AI Tool Can Predict Heart Diseases up to 15 Years Before Onset"
+        source: "Technology Networks"
+        url: "http://ct.moreover.com/?a=59103539006&p=1pl&v=1&x=AH-YWcSsDvt55pwLgm2JwQ"
+      - priority: 4
+        title: "AI Multiomics Enhances Personalized Cardiovascular Disease Prediction"
+        source: "ScienMag"
+        url: "https://scienmag.com/ai-multiomics-enhances-personalized-cardiovascular-disease-prediction/"
+      - priority: 5
+        title: "AI Multiomics Enhances Personalized Cardiovascular Disease Prediction"
+        source: "Bioengineer.org"
+        url: "http://ct.moreover.com/?a=58777235466&p=1pl&v=1&x=N6Fm0azg8sMz3QCVOiHMbw"
+      - priority: 6
+        title: "Single Blood Test Predicts Heart Diseases 15 Years Before Onset"
+        source: "Lab Medica"
+        url: "http://ct.moreover.com/?a=59108818205&p=1pl&v=1&x=afVfv7cJcDE6qXt6MDuFuw"
+      - priority: 7
+        title: "Eine einzige Blutuntersuchung kann Herzerkrankungen bis zu 15 Jahre vor ihrem Ausbruch vorhersagen"
+        source: "Germanic.News"
+        url: "http://ct.moreover.com/?a=59076001468&p=1pl&v=1&x=P9lqHWzdwnkG4nAV8JM7-A"
+    chinese_mentions:
+      - priority: 1
+        title: "港大研发“AI验血” 提前15年预测罹患心血管疾病风险"
+        source: "中国新闻网"
+        url: "https://www.chinanews.com.cn/dwq/2026/03-12/10585617.shtml"
+      - priority: 2
+        title: "港大醫學院研發創新AI驗血 提前15年精準預測中風及冠心病"
+        source: "巴士的報"
+        url: "https://www.bastillepost.com/hongkong/article/15733168-%E6%B8%AF%E5%A4%A7%E9%86%AB%E5%AD%B8%E9%99%A2%E7%A0%94%E7%99%BC%E5%89%B5%E6%96%B0ai%E9%A9%97%E8%A1%80-%E6%8F%90%E5%89%8D15%E5%B9%B4%E7%B2%BE%E6%BA%96%E9%A0%90%E6%B8%AC%E4%B8%AD%E9%A2%A8%E5%8F%8A"
+  internet-mental-health:
+    summary: "This cross-national study covering adults aged 50 years and older in 23 countries showed that Internet use was consistently associated with better mental health, lower depressive symptoms, and higher life satisfaction, highlighting digital inclusion as a potential strategy for healthy ageing."
+    english_mentions:
+      - priority: 1
+        title: "HKUMed study highlights internet use as a strategy for better mental health in older adults"
+        source: "HKU News"
+        date: "20/11/2024"
+        url: "https://www.hku.hk/press/news_detail_27908.html"
+      - priority: 2
+        title: "Why you should spend more time online if you're over 50: new study"
+        source: "BBC Science Focus"
+        date: "18/11/2024"
+        url: "https://www.sciencefocus.com/news/over-50s-internet-benefits"
+      - priority: 3
+        title: "Internet use can make over-50s happier, study finds"
+        source: "The Times"
+        date: "18/11/2024"
+        url: "https://www.thetimes.co.uk/article/internet-use-linked-to-health-and-happiness-for-over-50s-62g352h2t"
+      - priority: 4
+        title: "Internet Use May Boost Mental Health Benefits in Older Adults"
+        source: "JAMA Medical News in Brief"
+        date: "20/12/2024"
+        url: "https://jamanetwork.com/journals/jama/fullarticle/2828510"
+      - priority: 5
+        title: "Internet use linked to better mental health in older adults"
+        source: "Nature Medicine Research Highlight"
+        date: "26/11/2024"
+        url: "https://www.nature.com/articles/d41591-024-00081-7"
+      - priority: 6
+        title: "Using the internet may help older people's mental health, says new study"
+        source: "Sky News"
+        date: "18/11/2024"
+        url: "https://news.sky.com/story/using-the-internet-may-help-older-peoples-mental-health-says-new-study-13256185"
+      - priority: 7
+        title: "Internet use linked to improved mental health in older adults"
+        source: "Croucher Foundation"
+        date: "21/02/2025"
+        url: "https://croucher.org.hk/en/news/internet-use-linked-to-improved-mental-health-in-older-adults"
+      - priority: 8
+        title: "Internet use boosts mental health for older adults worldwide"
+        source: "News-Medical"
+        date: "19/11/2024"
+        url: "https://www.news-medical.net/news/20241119/Internet-use-boosts-mental-health-for-older-adults-worldwide.aspx"
+      - priority: 9
+        title: "Internet access may improve well-being in adults over 50"
+        source: "MedicalXpress"
+        date: "19/11/2024"
+        url: "http://ct.moreover.com/?a=55320638090&p=1pl&v=1&x=mOsu-vBVKOMx-l8MzqeDeQ"
+      - priority: 10
+        title: "Internet use in adults over age 50 linked to better mental health"
+        source: "Phys.org"
+        date: "20/11/2024"
+        url: "https://phys.org/news/2024-11-internet-adults-age-linked-mental.html"
+      - priority: 11
+        title: "Internet use for adults 50 or older can improve mental wellbeing — study finds"
+        source: "ABC News"
+        date: "20/11/2024"
+        url: "https://www.abc.net.au/news/2024-11-20/study-finds-50-year-olds-have-positive-internet-interactions/104618914"
+      - priority: 12
+        title: "Internet use can make over-50s happier, study finds"
+        source: "British Psychological Society"
+        date: "02/12/2024"
+        url: "https://www.bps.org.uk/news/bps-reacts-new-study-says-internet-use-can-make-over-50s-happier"
+      - priority: 13
+        title: "メンタルヘルス：50歳以上の成人のウェルビーイングは、インターネットの利用によって改善される可能性がある"
+        source: "Nature Asia"
+        date: "19/11/2024"
+        url: "https://www.natureasia.com/ja-jp/nathumbehav/pr-highlights/15093"
+      - priority: 14
+        title: "Internet Use Boosts Mental Health in Older Adults: Study"
+        source: "Mirage News"
+        date: "21/11/2024"
+        url: "https://www.miragenews.com/internet-use-boosts-mental-health-in-older-1361974/"
+      - priority: 15
+        title: "Internet use linked to better mental health for older adults"
+        source: "PsyPost"
+        date: "22/11/2024"
+        url: "https://www.psypost.org/internet-use-linked-to-better-mental-health-for-older-adults/"
+    chinese_mentions:
+      - priority: 1
+        title: "港大醫學院研究指出使用互聯網有助促進中老年人精神健康"
+        source: "HKUMed 中文"
+        date: "20/11/2024"
+        url: "https://www.med.hku.hk/zh-hk/news/press/20241120-hkumed-study-highlights-internet-use-as-a-strategy-for-better-mental-health"
+      - priority: 2
+        title: "使用互联网如何影响精神健康？研究称或能提升逾50岁人群幸福感"
+        source: "中国新闻网"
+        date: "19/11/2024"
+        url: "https://www.chinanews.com.cn/sh/2024/11-19/10321873.shtml"
+      - priority: 3
+        title: "港大醫學院：使用互聯網有助促進中老年人精神健康"
+        source: "香港商報網"
+        date: "20/11/2024"
+        url: "https://hkcd.com/content_app/2024-11/20/content_8667931.html"
+      - priority: 4
+        title: "科学调查发现，使用互联网的老年群体幸福感更强，要鼓励爸妈多使用手机吗？"
+        source: "腾讯新闻"
+        date: "20/11/2024"
+        url: "https://news.qq.com/rain/a/20241120Q01MJV00"
+      - priority: 5
+        title: "港大研究指經常上網較少出現抑鬱症 有助50歲以上人士精神健康"
+        source: "橙新聞"
+        date: "20/11/2024"
+        url: "https://www.orangenews.hk/hongkong/1245694/%E6%B8%AF%E5%A4%A7%E7%A0%94%E7%A9%B6%E6%8C%87%E7%B6%93%E5%B8%B8%E4%B8%8A%E7%B6%B2%E8%BC%83%E5%B0%91%E5%87%BA%E7%8F%BE%E6%8A%91%E9%AC%B1%E7%97%87-%E6%9C%89%E5%8A%A950%E6%AD%B2%E4%BB%A5%E4%B8%8A%E4%BA%BA%E5%A3%AB%E7%B2%BE%E7%A5%9E%E5%81%A5%E5%BA%B7.shtml"
+      - priority: 6
+        title: "中老年上網有助精神健康　研究揭做「網民」較少抑鬱"
+        source: "on.cc東網"
+        date: "20/11/2024"
+        url: "https://hk.on.cc/hk/bkn/cnt/news/20241120/bkn-20241120160337553-1120_00822_001.html"
+      - priority: 7
+        title: "发现使用互联网或能提升50岁以上人群幸福感"
+        source: "科学网"
+        date: "19/11/2024"
+        url: "https://news.sciencenet.cn/htmlnews/2024/11/534290.shtm"
+        note: "中国科学报报道"
+      - priority: 8
+        title: "《自然-人类行为》：使用互联网或能提升50岁以上人群幸福感"
+        source: "澎湃新闻"
+        date: "19/11/2024"
+        url: "https://news.qq.com/rain/a/20241119A017SZ00"
+      - priority: 9
+        title: "新研究：互联网或能提升50岁以上人群幸福感"
+        source: "科学网"
+        date: "19/11/2024"
+        url: "https://news.sciencenet.cn/htmlnews/2024/11/534274.shtm"
+        note: "转载澎湃新闻报道"

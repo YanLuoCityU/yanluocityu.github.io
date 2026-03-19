@@ -1,0 +1,146 @@
+{
+  "highlights": [
+    {
+      "slug": "multiomics-cvd",
+      "title": "AI-based multiomics profiling reveals complementary omics contributions to personalized prediction of cardiovascular disease",
+      "journal": "Nature Communications",
+      "paper_url": "https://doi.org/10.1038/s41467-026-68956-6",
+      "metrics_url": "https://www.nature.com/articles/s41467-026-68956-6/metrics",
+      "altmetric_score": 76,
+      "news_outlets": 9,
+      "mentions": [
+        {
+          "title": "AI Multiomics Enhances Personalized Cardiovascular Disease Prediction",
+          "source": "Bioengineer.org",
+          "url": "http://ct.moreover.com/?a=58777235466&p=1pl&v=1&x=N6Fm0azg8sMz3QCVOiHMbw"
+        },
+        {
+          "title": "AI Multiomics Enhances Personalized Cardiovascular Disease Prediction",
+          "source": "ScienMag",
+          "url": "https://scienmag.com/ai-multiomics-enhances-personalized-cardiovascular-disease-prediction/"
+        },
+        {
+          "title": "HKUMed AI Blood Test Predicts Heart Disease 15 Years Early",
+          "source": "bastillepost",
+          "url": "http://ct.moreover.com/?a=59072664496&p=1pl&v=1&x=vVr2ua8FppLik9c3KajWiw"
+        },
+        {
+          "title": "HKUMed develops innovative AI tool: a single blood test can predict heart diseases up to 15 years before onset - All News - Media - HKU",
+          "source": "The University of Hong Kong Press Releases",
+          "url": "http://www.hku.hk/press/news_detail_28986.html"
+        },
+        {
+          "title": "A single blood test can predict heart diseases up to 15 years before onset",
+          "source": "MedicalXpress",
+          "url": "https://medicalxpress.com/news/2026-03-blood-heart-diseases-years-onset.html?src_id=alt"
+        },
+        {
+          "title": "Eine einzige Blutuntersuchung kann Herzerkrankungen bis zu 15 Jahre vor ihrem Ausbruch vorhersagen",
+          "source": "Germanic.News",
+          "url": "http://ct.moreover.com/?a=59076001468&p=1pl&v=1&x=P9lqHWzdwnkG4nAV8JM7-A"
+        },
+        {
+          "title": "AI Tool Can Predict Heart Diseases up to 15 Years Before Onset",
+          "source": "Technology Networks",
+          "url": "http://ct.moreover.com/?a=59103539006&p=1pl&v=1&x=AH-YWcSsDvt55pwLgm2JwQ"
+        },
+        {
+          "title": "Single Blood Test Predicts Heart Diseases 15 Years Before Onset",
+          "source": "Lab Medica",
+          "url": "http://ct.moreover.com/?a=59108818205&p=1pl&v=1&x=afVfv7cJcDE6qXt6MDuFuw"
+        }
+      ]
+    },
+    {
+      "slug": "internet-mental-health",
+      "title": "Positive association between Internet use and mental health among adults aged ≥50 years in 23 countries",
+      "journal": "Nature Human Behaviour",
+      "paper_url": "https://doi.org/10.1038/s41562-024-02048-7",
+      "metrics_url": "https://www.nature.com/articles/s41562-024-02048-7/metrics",
+      "altmetric_score": 838,
+      "news_outlets": 105,
+      "mentions": [
+        {
+          "title": "Метаанализ выявил пользу интернета для психического здоровья пожилых",
+          "source": "Naked Science",
+          "url": "http://ct.moreover.com/?a=55309267804&p=1pl&v=1&x=cjE0DbkLkRur2a5Ognvr7A"
+        },
+        {
+          "title": "News story from BBC Focus Science & Technology on Monday 18 November 2024",
+          "source": "BBC Focus Science & Technology",
+          "url": ""
+        },
+        {
+          "title": "メンタルヘルス：50歳以上の成人のウェルビーイングは、インターネットの利用によって改善される可能性がある(Nature Human Behaviour)",
+          "source": "Nature Asia",
+          "url": "http://ct.moreover.com/?a=55314480919&p=1pl&v=1&x=864p_r88fRgEF8jTR2gD2g"
+        },
+        {
+          "title": "Internetnutzung könnte das Wohlbefinden von Erwachsenen über 50 verbessern",
+          "source": "Mitteldeutscher Rundfunk",
+          "url": "http://ct.moreover.com/?a=55316166970&p=1pl&v=1&x=55Ww36G3IObwi5A62Egg8A"
+        },
+        {
+          "title": "Оказалось, сидеть в интернете полезно, но только пожилым людям",
+          "source": "Popmech",
+          "url": "http://ct.moreover.com/?a=55316531479&p=1pl&v=1&x=5zqav8cnzqV_Cu8pSUNJOw"
+        },
+        {
+          "title": "Mentale Gesundheit: Das Internet kann Einsamkeit verringern – und Lebenszufriedenheit erhöhen - WELT",
+          "source": "Die Welt",
+          "url": "http://ct.moreover.com/?a=55326525925&p=1pl&v=1&x=6wtVRn2MF76k3xQi5qT_2w"
+        },
+        {
+          "title": "Internet access may improve well-being in adults over 50",
+          "source": "MedicalXpress",
+          "url": "http://ct.moreover.com/?a=55320638090&p=1pl&v=1&x=mOsu-vBVKOMx-l8MzqeDeQ"
+        },
+        {
+          "title": "Internet use for people aged 50 or above linked to improved mental health",
+          "source": "ABC.net.au",
+          "url": "http://ct.moreover.com/?a=55322096846&p=1pl&v=1&x=jajibiH2TnRyw6j5aMwIrg"
+        },
+        {
+          "title": "Метаанализ выявил пользу интернета для психического здоровья пожилых",
+          "source": "Naked Science",
+          "url": "https://naked-science.ru/article/medicine/internet-zdorovye-pozhily"
+        },
+        {
+          "title": "Internet use benefits mental health in later life",
+          "source": "Springer Nature Research Communities",
+          "url": "https://communities.springernature.com/posts/internet-use-benefits-mental-health-in-later-life"
+        },
+        {
+          "title": "Пользователи интернета старше 50 лет оказались психически благополучнее сверстников",
+          "source": "N+1: научные статьи, новости, открытия",
+          "url": "https://nplus1.ru/news/2024/11/19/get-older-with-the-net"
+        },
+        {
+          "title": "Internet use boosts mental health for older adults worldwide",
+          "source": "news-medical.net",
+          "url": "https://www.news-medical.net/news/20241119/Internet-use-boosts-mental-health-for-older-adults-worldwide.aspx"
+        },
+        {
+          "title": "Internet gegen Einsamkeit: Wie das Netz die psychische Gesundheit der Generation 50 plus stärkt",
+          "source": "Brights - Die Natur des Zweifels",
+          "url": "https://brightsblog.wordpress.com/2024/11/20/internet-gegen-einsamkeit-wie-das-netz-die-psychische-gesundheit-der-generation-50-plus-starkt/"
+        },
+        {
+          "title": "Roaming Charges: The Final Daze",
+          "source": "Counter Punch",
+          "url": "https://www.counterpunch.org/2024/11/22/roaming-charges-the-final-daze/"
+        },
+        {
+          "title": "Internet use linked to better mental health for older adults",
+          "source": "PsyPost",
+          "url": "https://www.psypost.org/internet-use-linked-to-better-mental-health-for-older-adults/"
+        },
+        {
+          "title": "Le bien-êtrant internet (épisode 301)",
+          "source": "Cerveau en argot",
+          "url": "https://cervenargo.hypotheses.org/7265"
+        }
+      ]
+    }
+  ]
+}
