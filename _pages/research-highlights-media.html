@@ -1,10 +1,11 @@
----
+﻿---
 layout: single
 title: "News / Media Coverage"
 permalink: /research-highlights/media/
 author_profile: true
 ---
 
+{% comment %}Use auto-scraped JSON as the base dataset, then let manual YAML override summary and curated mention lists where available.{% endcomment %}
 {% assign highlights = site.data.research_highlights_media.highlights %}
 {% assign curated = site.data.research_highlights_media_manual.highlights %}
 
@@ -97,8 +98,16 @@ author_profile: true
 
 {% for item in highlights %}
   {% assign extra_item = curated[item.slug] %}
-  {% assign english_mentions = extra_item.english_mentions | sort: 'priority' %}
-  {% assign chinese_mentions = extra_item.chinese_mentions | sort: 'priority' %}
+  {% if extra_item and extra_item.english_mentions %}
+    {% assign english_mentions = extra_item.english_mentions | sort: 'priority' %}
+  {% else %}
+    {% assign english_mentions = item.mentions %}
+  {% endif %}
+  {% if extra_item and extra_item.chinese_mentions %}
+    {% assign chinese_mentions = extra_item.chinese_mentions | sort: 'priority' %}
+  {% else %}
+    {% assign chinese_mentions = '' | split: '' %}
+  {% endif %}
   <section class="media-highlight-section" id="{{ item.slug }}">
     <h2><a href="{{ item.paper_url }}">{{ item.title }}</a></h2>
     <p class="media-highlight-meta"><i>{{ item.journal }}</i></p>
@@ -133,7 +142,7 @@ author_profile: true
       </div>
 
       <div class="media-coverage-column">
-        <h3 class="media-coverage-subtitle">中文报道</h3>
+        <h3 class="media-coverage-subtitle">ä¸­æ–‡æŠ¥é“</h3>
         {% assign chinese_count = chinese_mentions | size %}
         <ul class="media-mention-list{% if chinese_count > 3 %} scrollable{% endif %}">
           {% for mention in chinese_mentions %}
@@ -154,3 +163,5 @@ author_profile: true
     </div>
   </section>
 {% endfor %}
+
+

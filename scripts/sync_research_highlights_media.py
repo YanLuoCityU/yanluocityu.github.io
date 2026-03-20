@@ -1,5 +1,5 @@
-#!/usr/bin/env python3
-"""Fetch media-coverage highlights from Nature metrics pages for homepage research highlights."""
+﻿#!/usr/bin/env python3
+"""Fetch base media-coverage data from Nature metrics pages.\n\nThe generated JSON is the automatic source of truth for article metadata and raw mention lists.\nThe site then applies curated corrections from _data/research_highlights_media_manual.yml\nfor summary text and any mention lists that need manual cleanup or language-specific curation.\n"""
 
 from __future__ import annotations
 

@@ -1,4 +1,4 @@
-# Welcome to Jekyll!
+﻿# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -15,8 +15,8 @@ name                     : &name "Yan Luo"
 description              : &description "Yan Luo's academic portfolio - PhD candidate in Data Science at City University of Hong Kong"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://yanluocityu.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "/yanluo" # the subpath of your site, e.g. "/blog"
-repository               : "YanLuoCityU/yanluo"
+baseurl                  : "" # user site uses the root path
+repository               : "YanLuoCityU/yanluocityu.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -221,20 +221,9 @@ kramdown:
 
 # These settings control the types of collections used by the template
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
-    output: true
-    permalink: /:collection/:path/
-
-
 # These settings control how pages and collections are included in the site
 defaults:
   # _posts
@@ -255,15 +244,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -273,25 +253,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
-
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
@@ -359,4 +320,8 @@ compress_html:
   clippings: all
   ignore:
     envs: development
+
+
+
+
 
