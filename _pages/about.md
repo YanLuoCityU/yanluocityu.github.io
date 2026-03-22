@@ -28,6 +28,7 @@ Education
 Research Highlights
 ======
 {% include base_path %}
+{% assign research_highlights_media_url = '/research-highlights/media/' | relative_url %}
 {% assign sorted_publications = site.publications | sort: 'date' | reverse %}
 {% assign highlight_multiomics = nil %}
 {% assign highlight_internet = nil %}
@@ -134,7 +135,7 @@ Research Highlights
     <p class="research-highlight-meta">{{ highlight_multiomics.date | date: "%Y" }}</p>
     <p class="research-highlight-links">
       <a class="research-highlight-link" href="{{ highlight_multiomics.paperurl }}">Paper</a>
-      <a class="research-highlight-tag" href="{{ base_path }}/research-highlights/media/#multiomics-cvd">News / Media Coverage</a>
+      <a class="research-highlight-tag" href="{{ research_highlights_media_url }}#multiomics-cvd">News / Media Coverage</a>
     </p>
   </section>
   {% endif %}
@@ -148,7 +149,7 @@ Research Highlights
     <p class="research-highlight-meta">{{ highlight_internet.date | date: "%Y" }}</p>
     <p class="research-highlight-links">
       <a class="research-highlight-link" href="{{ highlight_internet.paperurl }}">Paper</a>
-      <a class="research-highlight-tag" href="{{ base_path }}/research-highlights/media/#internet-mental-health">News / Media Coverage</a>
+      <a class="research-highlight-tag" href="{{ research_highlights_media_url }}#internet-mental-health">News / Media Coverage</a>
     </p>
   </section>
   {% endif %}
