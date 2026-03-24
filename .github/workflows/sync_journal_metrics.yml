@@ -1,9 +1,7 @@
 name: Sync Journal Metrics
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 4 * * 1'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -25,7 +23,7 @@ jobs:
         if: ${{ env.EASYSCHOLAR_API_KEY == '' }}
         run: |
           echo "Missing EASYSCHOLAR_API_KEY repository secret."
-          echo "Add it before enabling scheduled journal-metrics sync."
+          echo "Add it before running the journal-metrics sync manually."
           exit 1
 
       - name: Sync journal metrics
@@ -42,3 +40,5 @@ jobs:
           git add _data/journal_metrics.yml
           git commit -m "Sync journal metrics"
           git push
+
+

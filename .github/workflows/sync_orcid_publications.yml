@@ -1,9 +1,7 @@
-﻿name: Sync ORCID Publications
+name: Sync ORCID Publications
 
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 3 * * 1'
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -26,7 +24,7 @@ jobs:
         if: ${{ env.ORCID_CLIENT_ID == '' || env.ORCID_CLIENT_SECRET == '' }}
         run: |
           echo "Missing ORCID_CLIENT_ID or ORCID_CLIENT_SECRET repository secrets."
-          echo "Add them before enabling scheduled ORCID publication sync."
+          echo "Add them before running the ORCID publication sync manually."
           exit 1
 
       - name: Sync ORCID publications
@@ -43,3 +41,5 @@ jobs:
           git add _publications files/orcid-bib
           git commit -m "Sync ORCID publications"
           git push
+
+
