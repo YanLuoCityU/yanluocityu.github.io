@@ -1,4 +1,4 @@
-﻿# Welcome to Jekyll!
+# Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your entire site, values
 # which you are expected to set up once and rarely need to edit after that.
@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Yan Luo / Academic Portfolio"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Yan Luo"
 description              : &description "Yan Luo's academic portfolio - PhD candidate in Data Science at City University of Hong Kong"   # Update this with a general description of your site, this is the default if not overridden by a page
